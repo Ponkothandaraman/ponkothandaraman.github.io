@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa"
 import { Mail } from 'lucide-react';
 const Contact =() => {
     return (
-        <div className="border-t border-stone-900 mt-20 pb-16">
+        <div className="border-t border-stone-900 mt-20 pb-8">
             <h2 className="my-10 text-center text-4xl">
                 Get in Touch
             </h2>

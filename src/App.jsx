@@ -5,6 +5,7 @@ import Experience from "./components/Experience.jsx";
 import Projects from "./components/Projects.jsx";
 import Education from "./components/Education.jsx";
 import Contact from "./components/Contact.jsx";
+import Copyright from "./components/Copyright.jsx";
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
         <section id="contact">
           <Contact />
         </section>
+          <Copyright />
       </div>
     </div>
   );

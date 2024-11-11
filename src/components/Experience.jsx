@@ -20,7 +20,7 @@ const Experience = () => {
                   {experience.company}
                 </span>
               </h3>
-              <p className="mb-4 text-stone-400 sm:text-1xl">
+              <p className="mb-4 text-stone-400 sm:text-1xl text-justify">
                 {experience.description}
               </p>
               <p className="flex flex-wrap gap-y-2">

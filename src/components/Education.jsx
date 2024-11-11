@@ -37,7 +37,7 @@ const Education = () => {
             {/* Bottom Section - Grade and Description */}
             <div className="mt-4 w-full text-center md:text-left">
               <p className="text-sm text-stone-400">Grade: {item.grade}</p>
-              <p className="text-sm text-stone-400 mt-2">{item.desc}</p>
+              <p className="text-sm text-stone-400 mt-2 text-justify">{item.desc}</p>
             </div>
           </div>
         ))}
