@@ -1,11 +1,9 @@
-import { education } from '../constants';
+import { education } from "../constants";
 
 const Education = () => {
   return (
     <div className="flex flex-col items-center px-4 lg:px-16">
-      <h2 className="my-10 text-center text-4xl lg:my-20">
-        Education
-      </h2>
+      <h2 className="my-10 text-center text-4xl lg:my-20">Education</h2>
 
       <div className="grid gap-8 md:gap-10 md:grid-cols-2 w-full max-w-4xl">
         {education.map((item) => (
@@ -28,7 +26,9 @@ const Education = () => {
 
               {/* Right Section - School, Degree, and Date */}
               <div className="flex flex-col md:items-start text-center md:text-left">
-                <h3 className="text-lg font-semibold text-stone-200">{item.school}</h3>
+                <h3 className="text-lg font-semibold text-stone-200">
+                  {item.school}
+                </h3>
                 <p className="text-base text-stone-400 mt-1">{item.degree}</p>
                 <span className="text-sm text-stone-400">{item.date}</span>
               </div>
@@ -37,7 +37,9 @@ const Education = () => {
             {/* Bottom Section - Grade and Description */}
             <div className="mt-4 w-full text-center md:text-left">
               <p className="text-sm text-stone-400">Grade: {item.grade}</p>
-              <p className="text-sm text-stone-400 mt-2 text-justify">{item.desc}</p>
+              <p className="text-sm text-stone-400 mt-2 text-justify">
+                {item.desc}
+              </p>
             </div>
           </div>
         ))}
