@@ -18,7 +18,15 @@ const Projects = () => {
             </div>
             <div className="w-full max-w-xl lg:w-3/4">
               <h3 className="mb-2 font-semibold text 2xl">{project.title}</h3>
-              <p className="mb-4 text-stone-400 text-justify">{project.description}</p>
+              {Array.isArray(project.description) ? (
+                <ul className="list-disc pl-5 mb-4 text-stone-400 text-justify space-y-2">
+                  {project.description.map((bullet, bulletIdx) => (
+                    <li key={bulletIdx}>{bullet}</li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="mb-4 text-stone-400 text-justify">{project.description}</p>
+              )}
               <p className="flex flex-wrap gap-y-2">
                 {project.technologies.map((tech, index) => (
                   <span

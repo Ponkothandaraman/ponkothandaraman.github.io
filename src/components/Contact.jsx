@@ -31,7 +31,7 @@ const Contact =() => {
                     className="hover:scale-125">
                     <FaGithub />
                 </a>
-                <a href="mailto:ponkothandaraman2002@gmail.com"
+                <a href={`mailto:${CONTACT.email}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Gmail"

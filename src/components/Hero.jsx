@@ -2,7 +2,9 @@ import profilePic from "../assets/nantha.jpg"
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { FaLinkedin } from "react-icons/fa"
 import { FaGithub } from "react-icons/fa"
+import { CONTACT } from "../constants";
 import { Mail } from 'lucide-react';
+
 
 
 function Typewriter() {
@@ -58,7 +60,7 @@ const Hero = () => {
                                 className="hover:scale-125">
                                 <FaGithub />
                             </a>
-                            <a href="mailto:ponkothandaraman2002@gmail.com"
+                            <a href={`mailto:${CONTACT.email}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Gmail"
